@@ -1,0 +1,342 @@
+@charset "utf-8";
+*{
+	margin:0px;
+	padding:0px;
+}
+@font-face {
+    font-family: homa;
+    src:url(../font/BYekan+.ttf);
+}
+body{
+	font-family:homa;
+	font-size:14px;
+	
+	
+}
+ul{
+	list-style-type:none;
+	text-decoration:none;}
+a{text-decoration:none;}
+#website-container{
+	width:100%;
+	}
+.container{
+	width:1170px;
+	height:auto;
+	margin:0 auto;
+		-webkit-transition:all .4s ease;
+	transition:all .4s ease;
+	margin-top:10px;
+	overflow:auto;	
+	-webkit-transition:all .5s ease;
+	transition:all .5s ease;
+
+
+	
+	}
+
+	h1{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.container .maindiv{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.container .maindiv p{
+		width: 100%;
+		text-align: center;
+		font-size: 16px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	
+	.container .maindiv .button1 {
+	  width: 20%;
+	  margin-left: 40%;
+	  border: none;
+	  height: 50px;
+	  background-color: white;
+	  border-style: solid;
+	  border-radius: 5px;
+	  border-width: 2px;;
+	  border-color: red;
+	  position: relative;
+	  box-shadow: 0 0px 20px 0 red;
+	  animation-name: shake-position;
+	  animation-duration: 0.3s;
+	  animation-timing-function: linear;
+	  /*animation-delay: 2s;*/
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	  animation-fill-mode: forwards;
+
+	}
+	
+	@keyframes shake-position {
+	  0%   {left:0px;}
+	  25%  {left:5px;}
+	  50%  {left:10px;}
+	  75%  {left:15px;}
+	  100% {left:20px;}
+	 
+	}
+
+	.container .maindiv .button2 {
+		width: 20%;
+		margin-left: 40%;
+		border: none;
+		height: 50px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;;
+		border-color: red;
+		position: relative;
+		box-shadow: 0 0px 20px 0 red;
+		animation-name: shake-transform;
+		animation-duration: 0.3s;
+		animation-timing-function: linear;
+		/*animation-delay: 2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+  
+	  }
+
+	@keyframes shake-transform {
+		50% {
+		  transform: translate3d(20px, 0, 0);
+		}
+	  }
+
+	 
+	  .container .maindiv .button3 {
+		width: 20%;
+		margin-left: 40%;
+		border: none;
+		height: 50px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;;
+		border-color: red;
+		position: relative;
+		box-shadow: 0 0px 20px 0 red;
+		animation-name: pulse-transform;
+		animation-duration: 0.3s;
+		animation-timing-function: linear;
+		/*animation-delay: 2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+  
+	  }
+
+	  @keyframes pulse-transform {
+		50%  {transform: scale(1.3);} 
+	  }
+
+	  .container .maindiv .button4 {
+		width: 20%;
+		margin-left: 40%;
+		border: none;
+		height: 50px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;;
+		border-color: red;
+		position: relative;
+		box-shadow: 0 0px 20px 0 red;
+		animation-name: skew-transform;
+		animation-duration: 0.1s;
+		animation-timing-function: linear;
+		/*animation-delay: 2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+  
+	  }
+	  @keyframes skew-transform {
+		25%  {transform: skewX(-30deg);} 
+		50%  {transform: skewX(30deg);} 
+		75%  {transform: skewX(-30deg);}
+	  }
+
+	  .container .maindiv .button5 {
+		width: 20%;
+		margin-left: 40%;
+		border: none;
+		height: 50px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;;
+		border-color: red;
+		position: relative;
+		box-shadow: 0 0px 20px 0 red;
+		animation-name: shadow-transform;
+		animation-duration: 0.3s;
+		animation-timing-function: linear;
+		/*animation-delay: 2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+	  }
+	  @keyframes shadow-transform {
+		50%  {box-shadow: 0 0px 50px 0 red;} 
+	  }
+
+	  .container .maindiv .button6 {
+		width: 20%;
+		margin-left: 40%;
+		border: none;
+		height: 50px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;;
+		border-color: red;
+		position: relative;
+		box-shadow: 0 0px 20px 0 red;
+		animation-name: blur-transform;
+		animation-duration: 0.3s;
+		animation-timing-function: linear;
+		/*animation-delay: 2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+	  }
+	  @keyframes blur-transform {
+		50%  {transform: skew(45deg);filter: blur(20px);} 
+	  }
+
+	  .container .maindiv .button7 {
+		width: 20%;
+		margin-left: 40%;
+		border: none;
+		height: 50px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;;
+		border-color: red;
+		position: relative;
+		box-shadow: 0 0px 20px 0 red;
+		animation-name: scale-transform;
+		animation-duration: 0.9s;
+		animation-timing-function: linear;
+		/*animation-delay: 2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+	  }
+	  @keyframes scale-transform {
+		100%  {transform: scaleX(-1);} 
+	  }
+
+	  .button8 {
+		width: 20%;
+		margin-left: 40%;
+		height: 50px;
+		border: none;
+		border-radius: 5px;
+		background-color: white;
+		box-shadow: 0 0px 20px 0 red;
+		position: relative;
+		overflow: hidden; 
+	}
+	
+	.button8::after {
+		content: ''; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: red; 
+		animation: fill-loading 3s linear infinite; 
+	}
+	
+	@keyframes fill-loading {
+		0% {
+			width: 0%; 
+		}
+		100% {
+			width: 100%;
+		}
+	}
+
+	.container .maindiv .button9 {
+		width: 20%;
+		margin-left: 40%;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		border: none;
+		height: 50px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;;
+		border-color: red;
+		position: relative;
+		box-shadow: 0 0px 20px 0 red;
+		animation-name: rotate-transform;
+		animation-duration: 0.3s;
+		animation-timing-function: linear;
+		/*animation-delay: 2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+	  }
+	  @keyframes rotate-transform {
+		50%,
+		100% {
+		  transform: rotate(900deg);
+		}
+	  }
+
+	@media only screen and (max-width:1200px){
+		div.container{width:970px;}
+		
+	}
+	@media only screen and (max-width:970px){
+		div.container{width:750px;}
+			
+	}
+	@media only screen and (max-width:750px){
+		div.container{width:550px;}
+		h1{
+			font-size: 20px;
+		}
+		.container .maindiv p{
+
+			font-size: 14px;
+		}
+		.container .maindiv .button1,
+		.container .maindiv .button2,
+		.container .maindiv .button3,
+		.container .maindiv .button4,
+		.container .maindiv .button5,
+		.container .maindiv .button6,
+		.container .maindiv .button7,
+		.container .maindiv .button8,
+		.container .maindiv .button9{
+			width: 50%;
+			margin-left: 25%;
+		}
+		
+		
+	}
+	@media only screen and (max-width:550px){
+		div.container{width:100%;}
+		
+	}
+		@media only screen and (max-width:350px){
+	
+			
+		}
+
